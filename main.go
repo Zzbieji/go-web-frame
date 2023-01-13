@@ -3,6 +3,7 @@ package main
 import (
 	"gopkg.in/ini.v1"
 	"log"
+	"webframe/datebases"
 	"webframe/routes"
 )
 
@@ -16,4 +17,6 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	db := datebases.InitMysql()
+	
 }
